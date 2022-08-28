@@ -38,7 +38,6 @@
   color: #333333;
 }
 .Hero {
-  background-color: violet;
   min-height: fit-content;
   box-sizing: border-box;
   display: flex;
@@ -78,4 +77,144 @@
   width: inherit;
   height: auto;
   border-radius: 18px;
+}
+.Hero__Contact {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-left: calc((100% - 546px) * (220) / (546-100%));
+  max-width: fit-content;
+  font-family: "Poppins", sans-serif;
+  height: fit-content;
+}
+.Hero__Contact > h1 {
+  font-weight: 500;
+  font-size: 48px;
+  max-width: 366px;
+}
+.Hero__Contact > p {
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 366px;
+}
+.Hero__Contact__Input > label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #828282;
+}
+.Contact__Input {
+  display: flex;
+  background-color: #f2f2f2;
+  flex: 1 1 auto;
+  border-radius: 12px;
+  min-height: 58px;
+  align-items: stretch;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 4px;
+}
+.Contact__Input > input {
+  border: none;
+  flex: 1 1 auto;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #f2f2f2;
+  padding-left: 21px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Contact__Input > button {
+  flex: 1 1 auto;
+  max-width: 94px;
+  background-color: #2d9cdb;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Services {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  box-sizing: border-box;
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+}
+.Services > h1 {
+  flex: 1 1 auto;
+  max-width: 346px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #333333;
+}
+.Services__Cards {
+  display: flex;
+  justify-content: space-between;
+}
+.Services__Card {
+  flex: 1 1 auto;
+  max-width: 342px;
+  box-sizing: border-box;
+  padding: 46px 34px;
+  height: fit-content;
+}
+.Services__Card:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+.Services__Card:hover > button {
+  background-color: #2d9cdb;
+  color: white;
+  cursor: pointer;
+}
+.Services__Card > h1 {
+  font-size: 24px;
+  margin-top: 35px;
+  font-weight: 700;
+}
+.Services__Card > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-top: 24px;
+}
+.Services__Card > button {
+  border: none;
+  height: 100%;
+  max-height: 42px;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  color: #828282;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.Services__Card > span {
+  background-color: #2d9cdb;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  border-radius: 16px;
+}
+.Services__Card:nth-of-type(2) > span {
+  background-color: #27ae60;
+  transform: rotate(90deg);
+}
+.Services__Card:nth-of-type(3) > span {
+  background-color: #eb5757;
 }
