@@ -3,7 +3,6 @@
   padding: 0;
 }
 .Header {
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -49,9 +48,7 @@
   font-family: "Poppins", sans-serif;
 }
 .Hero__Text {
-  background-color: thistle;
   align-self: flex-start;
-  /* margin-left: 220px; */
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -245,17 +242,219 @@
   width: 100%;
   height: 1600px;
   max-width: 1120px;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 
 .Product__Card {
-  background-color: darkmagenta;
   width: 545px;
   height: 640px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Product__Card > img {
+  width: 100%;
+  max-width: 545px;
+  height: 100%;
+  max-height: 545px;
+  border-radius: 12px;
+}
+.Product__Card > span {
+  font-weight: 800;
+  font-size: 14px;
+  color: #828282;
+}
+.Product__Card > p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+}
+.Products__Container .Product__Card:nth-child(odd) {
+  align-self: flex-end;
 }
 
-.Products__Container .Product__Card:nth-child(odd) {
-  background-color: yellow;
+.Teams {
+  padding-top: 200px;
+  display: flex;
+  gap: 42px;
+  box-sizing: border-box;
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+}
+.Teams__Left {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: fit-content;
+}
+.Teams__Left :nth-child(1) {
+  color: #eb5757;
+  font-weight: 500;
+  font-size: 18px;
+}
+.Teams__Left > h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+.Teams__Left > :nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+.Teams__Right {
+  height: 100%;
+  width: 100%;
+  max-width: 636px;
+  max-height: 584px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+.person1 {
+  grid-row: 1 / span 2;
+  max-width: 320px;
+  max-height: 320px;
+  align-self: center;
+  border-radius: 24px;
+}
+.person2 {
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 24px;
+}
+.person3 {
+  max-width: 290px;
+  max-height: 300px;
+  border-radius: 24px;
   align-self: flex-end;
+  justify-self: flex-start;
+}
+.Testimonial {
+  padding-top: 200px;
+  display: flex;
+  gap: 42px;
+  box-sizing: border-box;
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-bottom: 32px;
+  font-family: "Poppins", sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 202px;
+}
+.Testimonial > h1 {
+  font-size: 36px;
+  font-weight: 500;
+  max-width: 938px;
+}
+.Testimonial__Card {
+  align-self: flex-start;
+  display: flex;
+  gap: 30px;
+}
+.Testimonial__Card > img {
+  max-width: 82px;
+  max-height: 82px;
+  border-radius: 12px;
+}
+.Testimonial__Detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Testimonial__Detail > h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.Testimonial__Detail > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.Footer {
+  height: 385px;
+  max-height: 385px;
+  background-color: #100e1d;
+  box-sizing: border-box;
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-top: 46px;
+  font-family: "Poppins";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Footer__Top {
+  display: flex;
+  flex: 1;
+  height: fit-content;
+}
+.Footer__Left {
+  height: 100%;
+  max-height: 180px;
+  display: flex;
+  flex: 1;
+  gap: 245px;
+}
+.Footer__Links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 180px;
+  gap: 10px;
+  justify-content: space-between;
+}
+.Footer__Links > a {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.Footer__Social {
+}
+.Footer__Social > h1 {
+  font-family: "Heebo";
+  font-weight: 800;
+  font-size: 36px;
+  color: white;
+}
+.Social__Icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+}
+.Social__Icons > img {
+  height: 24px;
+  width: 24px;
+}
+.Footer__Right {
+  flex: 1;
+  color: white;
+  margin-left: 175px;
+  height: fit-content;
+}
+.Footer_label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+}
+.Footer_label > label {
+  color: white;
+}
+.Footer__Text {
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
 }
