@@ -2,12 +2,14 @@
   margin: 0;
   padding: 0;
 }
+
 .Header {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 42px 56px;
   min-width: fit-content;
+  width: 100%;
 }
 .Header__Left {
   flex: 1 1 auto;
@@ -35,6 +37,9 @@
   line-height: 36px;
   text-decoration: none;
   color: #333333;
+}
+.Header__Right__Burger {
+  display: none;
 }
 .Hero {
   min-height: fit-content;
@@ -154,6 +159,9 @@
 .Services__Cards {
   display: flex;
   justify-content: space-between;
+  max-width: fit-content;
+  gap: 4rem;
+  align-self: center;
 }
 .Services__Card {
   flex: 1 1 auto;
@@ -226,6 +234,7 @@
   padding-right: 165px;
   padding-bottom: 32px;
   font-family: "Poppins", sans-serif;
+  max-height: fit-content;
 }
 .Products > h1 {
   flex: 1 1 auto;
@@ -239,10 +248,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
-  height: 1600px;
+  width: fit-content;
+  min-height: 1600px;
+  max-width: fit-content;
   max-width: 1120px;
-  /* background-color: cornflowerblue; */
+  align-self: center;
+  max-height: fit-content;
 }
 
 .Product__Card {
@@ -284,6 +295,8 @@
   font-family: "Poppins", sans-serif;
   align-items: center;
   justify-content: space-between;
+  max-width: 90%;
+  flex-wrap: wrap;
 }
 .Teams__Left {
   max-width: 300px;
@@ -457,4 +470,193 @@
   text-align: center;
   color: white;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .Header {
+    padding: 10px 13px;
+  }
+  .Header__Left > a {
+    font-size: 24px;
+  }
+  .Header__Right {
+    display: none;
+  }
+  .Header__Right__Burger {
+    display: inline;
+    align-self: center;
+  }
+  .Header__Right__Burger > span {
+    font-size: 32px;
+  }
+  .Hero {
+    padding: 10px 40px;
+    padding-top: 48px;
+    gap: 22px;
+  }
+  .Hero__Text {
+    margin-left: 0;
+    gap: 4px;
+  }
+  .Hero__Text > p {
+    font-size: 12px;
+  }
+  .Hero__Text > h1 {
+    font-size: 24px;
+    max-width: 272px;
+    line-height: 36px;
+  }
+  .Hero__Image {
+    width: 100%;
+    min-width: 348px;
+    height: auto;
+  }
+  .Hero__Image > img {
+    height: 145px;
+  }
+  .Hero__Contact {
+    align-self: center;
+    margin-left: 0;
+    gap: 33px;
+  }
+  .Hero__Contact > h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 228px;
+  }
+  .Hero__Contact > p {
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 275px;
+  }
+  .Hero__Contact__Input > label {
+    font-size: 10px;
+  }
+  .Contact__Input > input {
+    font-size: 14px;
+  }
+  .Contact__Input > button {
+    font-size: 14px;
+    min-width: 72px;
+  }
+  .Services {
+    padding: 0 16px;
+    padding-top: 102px;
+  }
+  .Services > h1 {
+    max-width: 260px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    padding-left: 36px;
+  }
+  .Services__Cards {
+    flex-direction: column;
+  }
+  .Products {
+    padding: 10px 45px;
+    padding-top: 136px;
+  }
+  .Products > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+  .Products__Container {
+    flex-direction: column;
+  }
+  .Product__Card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Product__Card > img {
+    max-width: 352px;
+    height: 100%;
+    max-height: 362px;
+  }
+
+  .Teams {
+    padding: 10px 10px;
+    padding-top: 136px;
+    max-width: 100%;
+  }
+  .Teams__Right {
+    gap: 6px;
+  }
+  .person1 {
+    grid-row: 1 / span 2;
+    max-width: 178px;
+    max-height: 178px;
+    align-self: center;
+    border-radius: 24px;
+  }
+  .person2 {
+    max-width: 144px;
+    max-height: 144px;
+    border-radius: 24px;
+  }
+  .person3 {
+    max-width: 162px;
+    max-height: 168px;
+    border-radius: 24px;
+    align-self: flex-end;
+    justify-self: flex-start;
+  }
+  .Testimonial {
+    padding: 10px 45px;
+    padding-top: 136px;
+  }
+  .Testimonial > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    max-width: 350px;
+  }
+
+  .Testimonial__Card > img {
+    max-width: 82px;
+    max-height: 82px;
+    border-radius: 12px;
+  }
+  .Footer {
+    padding: 10px 20px;
+    padding-top: 36px;
+    height: 100%;
+    max-height: fit-content;
+  }
+  .Footer__Top {
+    flex-direction: column;
+    height: fit-content;
+    gap: 96px;
+  }
+  .Footer__Left {
+    flex-direction: column;
+    gap: 64px;
+    height: fit-content;
+  }
+  .Footer__Links > a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-decoration: none;
+  }
+  .Footer__Social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .Footer__Right {
+    margin: 0;
+    margin-top: 100px;
+  }
+  .Footer__Text {
+    font-size: 14px;
+    margin-top: 154px;
+  }
 }
